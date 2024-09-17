@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('../partials/_navbar.ejs') %>
+    <div class="event-container">
+        <div class="event-title">Title: <%= event.title %></div>
+
+        <div class="event-detail">
+            <span class="event-label">Date:</span>
+            <span class="event-info"><%= event.date.toDateString() %></span>
+        </div>
+
+        <div class="event-detail">
+            <span class="event-label">Description:</span>
+            <span class="event-info"><%= event.description %></span>
+        </div>
+
+        <div class="event-detail">
+            <span class="event-label">Status:</span>
+            <span class="event-info"><%= event.status %></span>
+        </div>
+    </div>
+    <!-- make link a button -->
+    <a href="/users/<%= user._id %>/events/<%= event._id %>/edit" class="edit-button">Edit</a>
+    <form action="/users/<%= user._id %>/events/<%= event._id %>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete" class="button">
+    </form>
+</body>
+</html>

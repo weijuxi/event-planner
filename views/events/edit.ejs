@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= event.title %></title>
+</head>
+<body>
+    <%- include('../partials/_navbar.ejs') %>
+    <div class="event-container">
+        <form action="/users/<%= user._id %>/events/<%= event._id %>?_method=PUT" method="POST">
+            <div class="event-detail">
+                <label for="title" class="event-label">Title:</label>
+                <input type="text" name="title" id="title" value="<%= event.title %>" class="event-info">
+            </div>
+
+            <div class="event-detail">
+                <label for="date" class="event-label">Date:</label>
+                <input type="date" name="date" id="date" value="<%= event.date.toISOString().slice(0, 10) %>" class="event-info">
+            </div>
+
+            <div class="event-detail">
+                <label for="description" class="event-label">Description:</label>
+                <textarea name="description" id="description" class="event-info"><%= event.description %></textarea>
+            </div>
+
+            <div class="event-detail">
+                <label for="status" class="event-label">Status:</label>
+                <select name="status" id="status" class="event-info">
+                    <option value="In progress" <%= event.status === 'In progress' ? 'selected' : '' %>>In progress</option>
+                    <option value="Completed" <%= event.status === 'Completed' ? 'selected' : '' %>>Completed</option>
+                    <option value="Cancelled" <%= event.status === 'Cancelled' ? 'selected' : '' %>>Cancelled</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Update" class="button">
+        </form>
+</body>
+</html>

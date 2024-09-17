@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-const eventSchema = mongoose.Schema({
-  name: {
+const eventSchema = new mongoose.Schema({
+  title: {
     type: String,
     required: true,
   },
@@ -13,14 +13,13 @@ const eventSchema = mongoose.Schema({
   },
   status : {
     type: String,
-    enum: ['In progress', 'Completed', 'Not Started'],
-    default: 'Not Started',
+    enum: ['In progress', 'Completed', 'Cancelled'],
   },
 });
 
 
 
-const userSchema = mongoose.Schema({
+const userSchema = new mongoose.Schema({
   username: {
     type: String,
     required: true,
