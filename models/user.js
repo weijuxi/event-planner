@@ -7,15 +7,14 @@ const eventSchema = mongoose.Schema({
   },
   date: {
     type: Date,
-    required: true,
   },
   description : {
     type: String,
-    required: true,
   },
   status : {
-    type: Boolean,
-    required: true,
+    type: String,
+    enum: ['In progress', 'Completed', 'Not Started'],
+    default: 'Not Started',
   },
 });
 
