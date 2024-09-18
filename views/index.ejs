@@ -6,20 +6,22 @@
   <link rel="stylesheet" href="/stylesheets/style.css" />
   <title>Home Page</title>
 </head>
-<body>
-  <% if (user) { %>
-    <h1>Welcome to the Event App, <%= user.username %>!</h1>
-    <p>
-      <a href="/auth/sign-out">Sign out</a>
-    </p>
-  <% } else { %>
-    <%- include('./partials/_navbar.ejs') %>
-    <h1>Welcome to the Event App, guest.</h1>
-    <p>
-      <a href="/auth/sign-up">Sign up</a> or
-      <a href="/auth/sign-in">Sign in</a>.
-    </p>
-  <% } %>
+<body class="index-body">
+  <div class="index-container">
+    <div class="text-container">
+      <% if (user) { %>
+        <!-- <%- include('./partials/_navbar.ejs') %> -->
+        <h1 class="main-header">Welcome to the Event App, <%= user.username %>!</h1>
+        <!-- <p class="auth-links"><a class="signout-link" href="/auth/sign-out">Sign out</a></p> -->
+      <% } else { %>
+        <h1 class="main-header">Welcome to the Event App, guest.</h1>
+        <p class="auth-links">
+          <a class="signup-link" href="/auth/sign-up">Sign up</a>
+          <a class="signin-link" href="/auth/sign-in">Sign in</a>
+        </p>
+      <% } %>
+    </div>
+  </div>
   <!-- <p><a href="/vip-lounge">Get into the VIP Users Only lounge!</a></p> -->
 </body>
 </html>
