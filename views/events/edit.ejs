@@ -9,6 +9,7 @@
 <body>
     <%- include('../partials/_navbar.ejs') %>
     <div class="event-container">
+        <h1>Edit Event</h1>
         <form action="/users/<%= user._id %>/events/<%= event._id %>?_method=PUT" method="POST">
             <div class="event-detail">
                 <label for="title" class="event-label">Title:</label>
@@ -34,7 +35,7 @@
                 </select>
             </div>
 
-            <input type="submit" value="Update" class="button">
+            <input type="submit" value="Update" class="button event-button">
         </form>
 </body>
 </html>

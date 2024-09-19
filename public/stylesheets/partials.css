@@ -12,6 +12,7 @@
     size: 1em !important;
     margin: 0;
     flex: 1;
+    text-align: center;
 }
      
 .nav-links {

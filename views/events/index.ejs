@@ -8,14 +8,16 @@
 </head>
 <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1>All Events</h1>
-    <a href="/users/<%= user._id %>/events/new">Add New Event</a>
-    <ul>
-        <% event.forEach(event => { %>
-            <li>
-                <a href="/users/<%= user._id %>/events/<%= event._id %>"><%= event.title %></a>
-            </li>
-        <% }) %>
-    </ul>
+    <div class="container">
+        <h1>All Events</h1>
+        <a href="/users/<%= user._id %>/events/new">Add New Event</a>
+        <ul>
+            <% event.forEach(event => { %>
+                <li>
+                    <a href="/users/<%= user._id %>/events/<%= event._id %>"><%= event.title %></a>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
 </body>
 </html>
