@@ -78,3 +78,70 @@ margin: 20px 0 0 0;
 .signin-link:hover {
 background-color: #ffffff;
 }
+
+/* Edit and Show page css  */
+.event-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.event-detail {
+    margin-bottom: 15px;
+}
+
+.event-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.event-info {
+    color: #777;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Adds space between buttons */
+}
+
+/* Specific button colors */
+.edit-button {
+    background-color: #4CAF50;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+/* Container for buttons */
+.event-actions {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 10px; /* Adds consistent spacing between buttons */
+}

@@ -27,9 +27,11 @@
         </div>
     </div>
     <!-- make link a button -->
-    <a href="/users/<%= user._id %>/events/<%= event._id %>/edit" class="edit-button">Edit</a>
-    <form action="/users/<%= user._id %>/events/<%= event._id %>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete" class="button">
-    </form>
+    <div class="event-actions">
+        <a href="/users/<%= user._id %>/events/<%= event._id %>/edit" class="button edit-button">Edit</a>
+        <form action="/users/<%= user._id %>/events/<%= event._id %>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete" class="button delete-button">
+        </form>
+    </div>
 </body>
 </html>
