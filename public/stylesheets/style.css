@@ -12,17 +12,20 @@ body {
 
 
 .index-body {
-    background-image: url('');
+    background-image: url('https://everwall.com/wp-content/uploads/2013/12/WhyYouShouldHireAnEventPlanner-02.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     min-height: 100vh;
     width: 100vw;
     color: white;
+    display: flex;
 }
 
 .main-header {
     font-weight: bold;
-    color: white;
+    color: black;
     font-size: 5em;
     margin: 0 20px 0 20px;
 }
