@@ -1,7 +1,6 @@
 # Event Planner
 
 ![Event Planner Screenshot](https://via.placeholder.com/800x400)  
-_Add your app's screenshot or logo here._
 
 ## Description
 Event Planner is a web application designed to help users create, manage, and track events. Users can sign up and log in to manage their event lists, add new events, edit existing ones, or delete events no longer needed. Events are categorized by status (e.g., In progress, Completed, Cancelled) for easy tracking.
@@ -10,8 +9,7 @@ I built this app to provide a simple, intuitive tool for personal event manageme
 
 ## Getting Started
 ### Use the App
-You can use the deployed Event Planner app here: [Event Planner Live](#)  
-(_Link to your deployed app_)
+You can use the deployed Event Planner app here: [Event Planner Live]()  
 
 ### Instructions
 1. **Sign up or Log in** to start managing your events.
@@ -20,10 +18,8 @@ You can use the deployed Event Planner app here: [Event Planner Live](#)
 4. **Edit or Delete Events** as needed to keep your schedule up-to-date.
 
 ### Planning Materials
-- [Trello Board](#)  
-_Link to your Trello board for planning and user stories._
-- [Wireframes](#)  
-_Link to your wireframes or design mockups._
+- [Trello Board](https://trello.com/invite/b/66e4d01f5388cc5b0d8f5542/ATTI234eef0dab69308f93ba65aee0ac5a8d12CA018F/event-planner)  
+- [Wireframes](https://www.figma.com/board/TnhBvURSE9yyqkOFxA1MPZ/Event-index-page?node-id=0-1&t=WMhnGZzYyrxXtJUa-1)  
 
 ## Attributions
 This project uses the following external resources:
