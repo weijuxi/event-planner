@@ -1,6 +1,6 @@
 # Event Planner
 
-![Event Planner Screenshot](![Event planner home page](image.png))  
+![Event Planner Screenshot](![Event planner home page](image.png)
 
 ## Description
 Event Planner is a web application designed to help users create, manage, and track events. Users can sign up and log in to manage their event lists, add new events, edit existing ones, or delete events no longer needed. Events are categorized by status (e.g., In progress, Completed, Cancelled) for easy tracking.
