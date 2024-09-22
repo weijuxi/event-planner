@@ -9,7 +9,7 @@ I built this app to provide a simple, intuitive tool for personal event manageme
 
 ## Getting Started
 ### Use the App
-You can use the deployed Event Planner app here: [Event Planner Live]()  
+You can use the deployed Event Planner app here: [Event Planner Live]( )  
 
 ### Instructions
 1. **Sign up or Log in** to start managing your events.
