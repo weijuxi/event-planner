@@ -36,7 +36,7 @@ This project uses the following external resources:
 
 ## Next Steps
 Here are some future enhancements I plan to implement:
+- **Calendar View**: Provide a calendar interface for a monthly overview of events.
 - **Event Reminders**: Allow users to set reminders for upcoming events via email.
 - **Event Categories**: Enable custom tagging and filtering of events based on categories.
-- **Calendar View**: Provide a calendar interface for a monthly overview of events.
 - **Invite Friends**: Let users invite others to events and share event details via email.
