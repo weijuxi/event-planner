@@ -11,8 +11,29 @@
     <div class="container">
         <h1>All Events</h1>
         <a href="/users/<%= user._id %>/events/new">Add New Event</a>
+        <h2>In Progress</h2>
         <ul>
-            <% event.forEach(event => { %>
+            <% event.filter(e => e.status === 'In progress').forEach(event => { %>
+                <li>
+                    <a href="/users/<%= user._id %>/events/<%= event._id %>"><%= event.title %></a>
+                </li>
+            <% }) %>
+        </ul>
+
+        <!-- Completed Events -->
+        <h2>Completed</h2>
+        <ul>
+            <% event.filter(e => e.status === 'Completed').forEach(event => { %>
+                <li>
+                    <a href="/users/<%= user._id %>/events/<%= event._id %>"><%= event.title %></a>
+                </li>
+            <% }) %>
+        </ul>
+
+        <!-- Cancelled Events -->
+        <h2>Cancelled</h2>
+        <ul>
+            <% event.filter(e => e.status === 'Cancelled').forEach(event => { %>
                 <li>
                     <a href="/users/<%= user._id %>/events/<%= event._id %>"><%= event.title %></a>
                 </li>
