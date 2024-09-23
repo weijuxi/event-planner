@@ -12,7 +12,7 @@ const isSignedIn = require('./middleware/is-signed-in.js');
 const passUserToView = require('./middleware/pass-user-to-view.js');
 const eventController = require('./controllers/events.js');
 
-const port = process.env.PORT || 3000;
+// const port = process.env.PORT ? process.env.PORT : '3000';
 const path = require('path');
 
 mongoose.connect(process.env.MONGODB_URI);
@@ -55,6 +55,6 @@ app.use('/auth', authController);
 app.use(isSignedIn);
 app.use('/users/:userId/events', eventController);
 
-app.listen(port, () => {
-  console.log(`The express app is ready on port ${port}!`);
+app.listen(process.env.PORT, () => {
+  console.log(`Listening on port ${process.env.PORT}.`);
 });
