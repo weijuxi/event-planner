@@ -10,7 +10,7 @@ I built this app to provide a simple, intuitive tool for personal event manageme
 ## Getting Started
 ### Use the App
 
-You can use the deployed Event Planner app here: [Event Planner Live]()
+You can use the deployed Event Planner app here: [Event Planner Live](https://event-planner-app-a227bf7a787a.herokuapp.com/)
 
 
 ### Instructions
